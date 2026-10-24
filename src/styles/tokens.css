@@ -1,0 +1,98 @@
+/* FinScope design tokens — two independent axes:
+ * 1. data-theme: dark | light surfaces
+ * 2. data-market-colors: red-up | green-up semantic direction colours */
+
+:root,
+:root[data-theme='dark'] {
+  --bg: #0b0f14;
+  --panel: #111821;
+  --panel-rgb: 17 24 33;
+  --panel-2: #151f2b;
+  --panel-2-rgb: 21 31 43;
+  --panel-3: #1b2735;
+  --fg: #f1f5f9;
+  --muted: #94a3b8;
+  --subtle: #64748b;
+  --border: #263241;
+  --border-rgb: 38 50 65;
+  --border-strong: #34465c;
+  --accent: #4f8cff;
+  --accent-rgb: 79 140 255;
+  --accent-soft: rgba(79, 140, 255, 0.14);
+  --warn: #f5b942;
+  --warn-rgb: 245 185 66;
+  --danger: #ef4444;
+  --danger-rgb: 239 68 68;
+  --grid-line: rgba(148, 163, 184, 0.14);
+  --shadow-color: rgba(0, 0, 0, 0.55);
+  --scrollbar: #2c3a4c;
+  --chart-area-top: rgba(79, 140, 255, 0.26);
+  --chart-area-bottom: rgba(79, 140, 255, 0.01);
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #f5f7fb;
+  --panel: #ffffff;
+  --panel-rgb: 255 255 255;
+  --panel-2: #f1f5f9;
+  --panel-2-rgb: 241 245 249;
+  --panel-3: #e6edf5;
+  --fg: #0b1220;
+  --muted: #55657a;
+  --subtle: #7b8a9c;
+  --border: #dce3ec;
+  --border-rgb: 220 227 236;
+  --border-strong: #c3cedb;
+  --accent: #2563eb;
+  --accent-rgb: 37 99 235;
+  --accent-soft: rgba(37, 99, 235, 0.1);
+  --warn: #b45309;
+  --warn-rgb: 180 83 9;
+  --danger: #dc2626;
+  --danger-rgb: 220 38 38;
+  --grid-line: rgba(11, 18, 32, 0.08);
+  --shadow-color: rgba(15, 23, 42, 0.14);
+  --scrollbar: #c3cedb;
+  --chart-area-top: rgba(37, 99, 235, 0.2);
+  --chart-area-bottom: rgba(37, 99, 235, 0.01);
+  color-scheme: light;
+}
+
+:root,
+:root[data-market-colors='red-up'] {
+  --up: #f04452;
+  --down: #22a06b;
+  --up-soft: rgba(240, 68, 82, 0.14);
+  --down-soft: rgba(34, 160, 107, 0.14);
+}
+
+:root[data-market-colors='green-up'] {
+  --up: #22a06b;
+  --down: #f04452;
+  --up-soft: rgba(34, 160, 107, 0.14);
+  --down-soft: rgba(240, 68, 82, 0.14);
+}
+
+:root[data-theme='light'][data-market-colors='red-up'] {
+  --up: #d81f31;
+  --down: #0f8a58;
+  --up-soft: rgba(216, 31, 49, 0.1);
+  --down-soft: rgba(15, 138, 88, 0.1);
+}
+
+:root[data-theme='light'][data-market-colors='green-up'] {
+  --up: #0f8a58;
+  --down: #d81f31;
+  --up-soft: rgba(15, 138, 88, 0.1);
+  --down-soft: rgba(216, 31, 49, 0.1);
+}
+
+:root {
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 10px;
+  --sidebar-w: 232px;
+  --sidebar-w-collapsed: 68px;
+  --topbar-h: 56px;
+}
